@@ -1,0 +1,63 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic)
+html
+  margin: 0
+  font-family: 'Montserrat'
+  background-image: url(https://free4kwallpapers.com/uploads/originals/2019/07/17/anime-wallpaper.jpg)
+  background-position: center
+  background-size: cover
+  overflow: hidden
+.wrapper
+  padding: 2rem
+  display: flex
+  justify-content: center
+  align-items: center
+  max-width: 100vw
+  height: calc(100vh - 4rem)
+
+.piano
+  padding: 1rem
+  border-radius: .5rem
+  background-color: #333
+  max-width: 100rem
+  // width: 100%
+  display: flex
+  align-items: center
+  flex-direction: column
+
+.instruments
+  list-style: none
+  color: white
+  display: flex
+  gap: 1rem
+  &__item
+    border-radius: .25rem
+    padding: .5rem
+    cursor: pointer
+    &.active
+      background-color: rgba(#fff, .3)
+
+.keys
+  background-color: #fff
+  width: 100%
+  display: flex
+  justify-content: center
+  height: 18rem
+  background-color: #333
+
+.key
+  border: 1px solid black
+  border-radius: 0 0 .35rem .35rem
+  background-color: #fff
+  &.white
+    width: 55px
+    &.active
+      background-color: #E8E8E8
+  &.black
+    margin-left: -20px
+    margin-right: -20px
+    width: 37px
+    height: 60%
+    background-color: #000
+    z-index: 2
+    &.active
+      background-color: #696969
